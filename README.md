@@ -32,3 +32,14 @@ We found two ways to implement this into code:
 
 ### Recursive
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We found a way to avoid using a boolean by calling the function recursively. Every time we loop through the entire array and put the right number in the final position, we call the function again with a size one smaller than previously, so that it does not iterate through the positions which have already been set in place. Unfortunately, the online checker requires us to print the entire list after every swap, and this implementation is not capable of printing the entire array while sorting.
+
+## Time Complexity (in Big O)
+
+### Best Case
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The time complexity in the best case scenario is O(n), as the algorithm still has to traverse the entire array once to ensure it's in the correct order before stopping.
+
+### Average Case
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The time complexity in the average case scenario is O(n^2), as the algorithm has to traverse the entire array (O(n)) for each value, and since it sets each value of the array of size n, it has to do this an amount of times approaching n, therefore traversing n\*n times, or n^2. In an average case, there might be values already in the right position, thus allowing the array to be traversed a few times less, but it approaches n\*n. 
+
+### Worst Case
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The time complexity in the worst case scenario is O(n^2), as the algorithm has to traverse the entire array (O(n)) for each value, and since it sets each value of the array of size n, it has to do this n times as well, therefore traversing n*n times, or n^2.
