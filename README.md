@@ -10,7 +10,7 @@ Bubble Sort finds an out of place value (an element larger than the one succeedi
 ### First swap 
 (99 will swap with 71)
 
-| 19 | 48 | *71* | *99* | 13 | 52 | 96 | 73 | 86 | 7 |
+| 19 | 48 | *99* | *71* | 13 | 52 | 96 | 73 | 86 | 7 |
 |----|----|----|----|----|----|----|----|----|---|
 
 ### Second swap
