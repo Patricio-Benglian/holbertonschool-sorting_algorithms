@@ -5,7 +5,6 @@
  * @arr1: first element of array
  * @arr2: second element of array
  */
-
 void swap(int *array, int i)
 {
 
@@ -20,7 +19,6 @@ void swap(int *array, int i)
  * @array: array to sort
  * @size: size of array
  */
-
 void bubble_sort(int *array, size_t size)
 {
 	size_t i;		   /* Iterator */
