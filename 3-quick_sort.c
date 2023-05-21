@@ -41,7 +41,7 @@ int sorter(int *array, int start, int end, size_t size)
 	}
 	pivInd++;
 	qSwap(&array[i], &array[pivInd], array, size);
-	return (i);
+	return (pivInd);
 }
 /**
  * qsRecurse - recursively calls itself to sort partitions of array
