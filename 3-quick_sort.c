@@ -7,8 +7,8 @@
  */
 void qSwap(int *arr1, int *arr2, int *array, size_t size)
 {
-	int temp = *arr1; /* Save value of first variable */
-	if (arr1 != arr2) /* Dont bother if same */
+	int temp = *arr1;	/* Save value of first variable */
+	if (*arr1 != *arr2) /* Dont bother if same */
 	{
 		*arr1 = *arr2;
 		*arr2 = temp;
