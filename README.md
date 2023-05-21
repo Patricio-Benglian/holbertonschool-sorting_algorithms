@@ -7,6 +7,7 @@ Bubble Sort finds an out of place value (an element larger than the one succeedi
 ### Unsorted Array
 | 19 | 48 | 99 | 71 | 13 | 52 | 96 | 73 | 86 | 7 |
 |----|----|----|----|----|----|----|----|----|---|
+
 ### First swap 
 (99 will swap with 71)
 
@@ -43,3 +44,17 @@ We found two ways to implement this into code:
 
 ### Worst Case
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The time complexity in the worst case scenario is O(n^2), as the algorithm has to traverse the entire array (O(n)) for each value, and since it sets each value of the array of size n, it has to do this n times as well, therefore traversing n*n times, or n^2.
+
+
+## Quick Sort
+
+## Implementation
+
+Quick Sort chooses a **pivot** element to put into its rightful index, and then uses the lists of elements before and after that pivot as a partition, or sub-array to repeat the process. When putting the pivot in its index, it also sorts all the numbers so that the smaller numbers come before the pivot and the larger numbers after (assuming we are sorting in ascending order).
+
+### Unsorted Array
+| 19 | 48 | 99 | 71 | 13 | 52 | 96 | 73 | 86 | 7 |
+|----|----|----|----|----|----|----|----|----|---|
+
+WIP
+
