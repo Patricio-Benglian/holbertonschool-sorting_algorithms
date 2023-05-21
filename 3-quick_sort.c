@@ -5,12 +5,15 @@
  * @arr1: first element to swap
  * @arr2: second element to swap
  */
-void qSwap(int *arr1, int *arr2)
+void qSwap(int *arr1, int *arr2, int *array, size_t size)
 {
 	int temp = *arr1; /* Save value of first variable */
-
-	*arr1 = *arr2;
-	*arr2 = temp;
+	if (arr1 != arr2) /* Dont bother if same */
+	{
+		*arr1 = *arr2;
+		*arr2 = temp;
+		print_array(array, size);
+	}
 }
 
 /**
@@ -19,24 +22,25 @@ void qSwap(int *arr1, int *arr2)
  * @start: start of partition
  * @end: end of partition
  * @size: size of array for printing entire array
+ * Return: index value of pivot
  */
 int sorter(int *array, int start, int end, size_t size)
 {
+	int pivot = array[end];
 	int i = start;		/* Iterator through array */
 	int pivInd = i - 1; /* Finds correct index for pivot*/
 
 	/* Iterates only through partition segment */
 	for (i = start; i < end; i++)
 	{
-		if (array[i] < array[end])
+		if (array[i] < pivot)
 		{
 			pivInd++;
-			qSwap(&array[i], &array[pivInd]);
+			qSwap(&array[i], &array[pivInd], array, size);
 		}
 	}
 	pivInd++;
-	qSwap(&array[i], &array[pivInd]);
-	print_array(array, size);
+	qSwap(&array[i], &array[pivInd], array, size);
 	return (i);
 }
 /**
