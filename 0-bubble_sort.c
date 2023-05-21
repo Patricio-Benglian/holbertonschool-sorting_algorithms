@@ -2,8 +2,8 @@
 
 /**
  * swap - swaps two elements in array
- * @arr1: first element of array
- * @arr2: second element of array
+ * @array: array
+ * @i: element of array
  */
 void swap(int *array, int i)
 {
